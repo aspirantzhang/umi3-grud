@@ -27,9 +27,7 @@ const UserListPage: FC<UserPageProps> = ({
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [record, setRecord] = useState<Partial<SingleUserType> | undefined>(
-    undefined,
-  );
+  const [record, setRecord] = useState<SingleUserType | undefined>(undefined);
 
   const columns: ProColumns<SingleUserType>[] = [
     {
